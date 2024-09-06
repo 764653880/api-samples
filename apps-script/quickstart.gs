@@ -1,5 +1,5 @@
-// Note: Apps Script automatically requests authorization
-// based on the API's used in the code.
+/ Note: Apps Script automatically requests authorization
+/ based on the API's used in the code.
 
 function channelsListByUsername(part, params) {
   var response = YouTube.Channels.list(part,
