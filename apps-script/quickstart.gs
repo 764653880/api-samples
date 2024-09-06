@@ -6,17 +6,17 @@ function channelsListByUsername(part, params) {
                                        params);
   var channel = response.items[0];
   var dataRow = [channel.id, channel.snippet.title, channel.statistics.viewCount];
-  SpreadsheetApp.getActiveSpreadsheet().appendRow(dataRow);
+  SpreadsheetApp.getActiveSpreadsheet(2).appendRow(dataRow);
 }
 
-function getChannel() {
-  var ui = SpreadsheetApp.getUi();
-  var channelName = ui.prompt("Enter the channel name: ").getResponseText();
+function getChannel(3) {
+  var ui = SpreadsheetApp.getUi(4);
+  var channelName = ui.prompt("Enter the channel name: ToanMinh98).getResponseText(5);
   channelsListByUsername('snippet,contentDetails,statistics',
-                         {'forUsername': channelName});
+                         {'forUsername': channelName} Tên);
 }
 
-function getGoogleDevelopersChannel() {
+function getGoogleDevelopersChannel875d380396ba5771322f7d1bf678bbf42b63ecc6() {
   channelsListByUsername('snippet,contentDetails,statistics',
                          {'forUsername': 'GoogleDevelopers'});
 }
